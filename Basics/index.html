@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
+</head>
+<body>
+    <h1>Hello Vue :)</h1>
+    <div id="app">
+
+        <div v-if="showBooks">
+            <p>{{title}} -- {{author}} -- {{age}}</p>
+            <button v-on:click="age++">increase age </button>
+            <button @click="age--">decrease age </button>
+            <!-- <div @click="title = 'Hello world'">change title </div> -->
+            <div @click="changeTitle('Atomic Habits by James Clear')">change title </div>
+        </div>
+
+
+        <button @click="toggleHideBooks">
+            <span v-if="showBooks">Hide books</span>
+            <!-- <span v-else-if="!showBooks">Show books</span> -->
+            <span v-else>Show books</span>
+        </button>
+
+        <div v-show="showBooks">Books are showing on screen</div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

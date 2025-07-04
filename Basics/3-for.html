@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        body{
+            background: #eee;
+            max-width: 960px;
+            margin: 20px auto;
+        }
+        p,h3,ul{
+            margin:0;
+            padding: 0;
+        }
+        li{
+            list-style-type: none;
+            background: #fff;
+            margin: 20px auto;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        img{
+            height: 100px;
+            width: 100px;
+        }
+
+        .fav{
+            background: cyan;
+            color: black;
+        }
+
+    </style>
+</head> 
+<body>
+    <div id="app">
+
+        <!-- <p>{{filteredBooks}}</p> -->
+
+        <ul>
+            <li v-for="book in filteredBooks" :class="{fav: book.isFave}" @mouseover="changeColour(book)" @mouseleave="resetColour(book)">
+                <img class="img" :src="book.image" alt="book.title" />
+                <h3>{{book.title}}</h3>    
+                <p>{{book.author}}</p>    
+            </li>
+        </ul>
+
+        <a :href="url">go to linkedin</a>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
