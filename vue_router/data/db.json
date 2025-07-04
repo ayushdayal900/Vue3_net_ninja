@@ -1,0 +1,27 @@
+{
+    "jobs":[
+        {"title":"Ui/UX Designer","id":1},
+        {"title":"Web Developer","id":2},
+        {"title":"Data Scientist","id":3},
+        {"title":"Software Engineer","id":4},
+        {"title":"Project Manager","id":5},
+        {"title":"DevOps Engineer","id":6},
+        {"title":"System Analyst","id":7},
+        {"title":"Database Administrator","id":8},
+        {"title":"Network Engineer","id":9},
+        {"title":"Security Analyst","id":10}
+    ],
+
+    "blogs":[
+        {"title":"Understanding Vue.js Lifecycle Hooks","id":1},
+        {"title":"A Guide to Vue Router","id":2},
+        {"title":"State Management in Vue with Vuex","id":3},
+        {"title":"Building Reusable Components in Vue","id":4},
+        {"title":"Vue 3 Composition API: A Deep Dive","id":5},
+        {"title":"Testing Vue Applications with Jest","id":6},
+        {"title":"Optimizing Performance in Vue Apps","id":7},
+        {"title":"Integrating Vue with REST APIs","id":8},
+        {"title":"Vue Directives: A Comprehensive Guide","id":9},
+        {"title":"Creating Custom Directives in Vue","id":10}
+    ]
+}
